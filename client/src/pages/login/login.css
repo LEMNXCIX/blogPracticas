@@ -1,0 +1,72 @@
+.login {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+}
+
+.loginTitle {
+  font-size: 50px;
+}
+
+.loginForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm > label {
+  margin: 10px 0;
+}
+
+.loginInput {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  width: 50vh;
+}
+
+.loginButton {
+  margin-top: 20px;
+  color: white;
+  background-color: rgb(255, 126, 40, 0.7);
+  color: black;
+  padding: 10px;
+  border:1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  transition-duration: 0.4s;
+}
+.loginButton:hover{
+  background-color: rgb(255, 126, 40);
+}
+.loginButton:disabled{
+  cursor: not-allowed;
+  background-color: rgb(252, 173, 173);
+}
+
+.loginRegisterButton {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  color: white;
+  background-color: rgb(255, 126, 40, 0.7);
+  color: black;
+  padding: 10px;
+  border:1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  transition-duration: 0.4s;
+}
+.loginRegisterButton:hover{
+  background-color: rgb(255, 126, 40);
+}
