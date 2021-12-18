@@ -86,24 +86,12 @@ router.get("/", async (req, res) => {
       posts =await Post.find().sort({_id: -1}).limit(2)
     }
     else{
-      posts = await Post.find();
+      posts = await Post.find().sort({_id: -1});
     }
     res.status(200).json(posts);
   } catch (err) {
     res.status(500).json(err);
   }
 });
-// //GET ALL POSTS
-// router.get("/", async (req, res) => {
-//   const query = req.query.new;
 
-//   try {
-//     const posts = query
-//       ? await Post.find().sort({ _id: 1 }).limit(3)
-//       : await Post.find();
-//     res.status(200).json(posts);
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
 module.exports = router;

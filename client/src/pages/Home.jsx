@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import Header from "../components/header/Header";
 import Posts from "../components/posts/Posts";
-import Sidebar from "../components/sidebar/Sidebar";
-import styled from "styled-components";
+import {Slider} from "../components/Slider"
+import {Footer} from "../components/Footer"
 import axios from "axios";
 import { useLocation } from "react-router";
 
@@ -19,17 +18,16 @@ export default function Home() {
   }, [search]);
   return (
     <>
-      <Container>
-        {" "}
-        aqui va a ir algo mas
-        <hr/>
+    <Slider/>
+    
+      
         los ultimos posts
         <Posts posts={posts} />
-        <Sidebar />
-      </Container>
+       
+     
+      <hr />
+      <Footer/>
     </>
   );
 }
-const Container = styled.div`
-  display: flex;
-`;
+

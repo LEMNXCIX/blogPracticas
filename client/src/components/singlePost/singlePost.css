@@ -19,18 +19,18 @@
 .singlePostTitle {
   text-align: center;
   margin: 10px;
-  font-family: "Lora", serif;
   font-size: 28px;
 }
 
 .singlePostTitleInput {
-  margin: 10px;
-  font-family: "Lora", serif;
+  width: 100%;
+  margin: 10px 0px;
   font-size: 28px;
   text-align: center;
   border: none;
   color: gray;
-  border-bottom: 1px solid lightgray;
+  border-radius: 4px;
+  border: 1px solid ;
 }
 
 .singlePostTitleInput:focus {
@@ -60,7 +60,6 @@
   display: flex;
   justify-content: space-between;
   font-size: 16px;
-  font-family: "Varela Round", sans-serif;
   color: #b39656;
 }
 
@@ -77,23 +76,32 @@
 }
 
 .singlePostDescInput {
-  border: none;
+  border: 1px solid;
+  border-radius: 4px;
+  height: 110vh;
   color: #666;
   font-size: 18px;
   line-height: 25px;
+
 }
 
 .singlePostDescInput:focus {
   outline: none;
 }
 .singlePostButton {
-  width: 100px;
-  border: none;
-  background-color: teal;
-  padding: 5px;
   color: white;
-  border-radius: 5px;
+  background-color: rgb(255, 126, 40, 0.7);
+  color: black;
+  padding: 10px;
+  border:1px solid;
+  border-radius: 4px;
   cursor: pointer;
+  font-size: 20px;
+  transition-duration: 0.4s;
   align-self: flex-end;
-  margin-top: 20px;
+  margin: 5px 0px;
+}
+
+.singlePostButton:hover{
+  background-color: rgb(255, 126, 40);
 }

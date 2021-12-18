@@ -31,16 +31,11 @@ export default function TopBar() {
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/">
+            <Link className="link" to="/acercade">
               Acerca de nosotros
             </Link>
           </li>
-          <li className="topListItem">
-            <Link className="link" to="/">
-              Contacto
-            </Link>
-          </li>
-        
+                 
         </ul>
       </div>
       <div className="topRight">

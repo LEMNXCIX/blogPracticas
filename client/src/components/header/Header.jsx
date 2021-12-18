@@ -4,11 +4,11 @@ export default function Header() {
   return (
     <div className="header">
       <div className="headerTitles">
-        <span className="headerTitleLg">Blog</span>
+        <span className="headerTitleLg">Blog de Codornices</span>
       </div>
       <img
         className="headerImg"
-        src="https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        src="https://revistajaraysedal.es/wp-content/uploads/2021/07/caza-codorniz-seobirdlife.jpg"
         alt=""
       />
     </div>

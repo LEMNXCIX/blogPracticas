@@ -1,0 +1,26 @@
+{
+  
+  "sliderItems": [
+    {
+      "id": 1,
+      "img": "https://visionanimal.com/wp-content/uploads/2020/11/5cb89130082c7_CODORNIZ.jpeg",
+      "title": "¡Una Codorniz jeje!",
+      "desc":"Bichos raros XD",
+      "bg": "f5fafd"
+    },
+    {
+      "id": 2,
+      "img": "https://criadeaves.com/wp-content/uploads/2021/03/Codorniz-no-pone-huevos.jpg",
+      "title": "Cordiniz",
+      "desc":"Sip, ponen huevos lol XD",
+      "bg": "fcf1ed"
+    },
+    {
+      "id": 3,
+      "img": "https://www.lavanguardia.com/files/content_image_mobile_filter/uploads/2021/01/13/5fff1fafc29f2.jpeg",
+      "title": "Codorniz pequeña",
+      "desc":"Es como las otras pero pequenia",
+      "bg": "fbf0f4"
+    }
+  ]
+}

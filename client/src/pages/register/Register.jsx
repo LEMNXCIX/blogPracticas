@@ -49,7 +49,7 @@ export default function Register() {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button className="registerButton" type="submit">
-         Registrate
+          Registrate
         </button>
       </form>
       <button className="registerLoginButton">
@@ -57,7 +57,11 @@ export default function Register() {
           Inicia sesion
         </Link>
       </button>
-      {error && <span style={{color:"red", marginTop:"10px"}}>Something went wrong!</span>}
+      {error && (
+        <span style={{ color: "red", marginTop: "10px" }}>
+          Something went wrong!
+        </span>
+      )}
     </div>
   );
 }

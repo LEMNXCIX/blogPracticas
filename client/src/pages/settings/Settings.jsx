@@ -45,8 +45,8 @@ export default function Settings() {
     <div className="settings">
       <div className="settingsWrapper">
         <div className="settingsTitle">
-          <span className="settingsUpdateTitle">Update Your Account</span>
-          <span className="settingsDeleteTitle">Delete Account</span>
+          <span className="settingsUpdateTitle">Actualiza tus datos</span>
+          <span className="settingsDeleteTitle">Borrar cuenta</span>
         </div>
         <form className="settingsForm" onSubmit={handleSubmit}>
           <label>Profile Picture</label>
@@ -56,7 +56,7 @@ export default function Settings() {
               alt=""
             />
             <label htmlFor="fileInput">
-              <i className="settingsPPIcon far fa-user-circle"></i>
+              <i className="settingsPPIcon  far fa-image"></i>
             </label>
             <input
               type="file"
@@ -65,34 +65,34 @@ export default function Settings() {
               onChange={(e) => setFile(e.target.files[0])}
             />
           </div>
-          <label>Username</label>
+          <label>Nombre de usuario</label>
           <input
             required
             type="text"
             placeholder={user.username}
             onChange={(e) => setUsername(e.target.value)}
           />
-          <label>Email</label>
+          <label>Correo electronico</label>
           <input
             required
             type="email"
             placeholder={user.email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <label>Password</label>
+          <label>Contrasenia</label>
           <input
             required
             type="password"
             onChange={(e) => setPassword(e.target.value)}
           />
           <button className="settingsSubmit" type="submit">
-            Update
+            Actualizar
           </button>
           {success && (
             <span
               style={{ color: "green", textAlign: "center", marginTop: "20px" }}
             >
-              Profile has been updated...
+             Tus datos se han actualizado corectamente
             </span>
           )}
         </form>
