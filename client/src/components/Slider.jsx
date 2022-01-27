@@ -104,10 +104,3 @@ const Desc = styled.p`
   font-weight: 500;
   letter-spacing: 1px;
 `;
-const Button = styled.button`
-  padding: 10px;
-  font-size: 20px;
-  background-color: transparent;
-  cursor: pointer;
-  border-radius: 4px;
-`;

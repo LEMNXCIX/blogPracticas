@@ -7,7 +7,7 @@ import { Context } from "../../context/Context";
 export default function Write() {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
-  const [categories, setCategories]=useState("")
+  const [categories, setCategories] = useState("");
   const [file, setFile] = useState(null);
   const { user } = useContext(Context);
 
@@ -76,12 +76,14 @@ export default function Write() {
 
             <div className="writeOption">
               <span>Seleciona una categoria</span>
-              <select name="" id=""  onChange={(e) => setCategories(e.target.value)}>
+              <select
+                name=""
+                id=""
+                onChange={(e) => setCategories(e.target.value)}
+              >
                 <option>Categorias</option>
                 {cats.map((c) => (
-                  <option >
-                    {c.name}
-                  </option>
+                  <option>{c.name}</option>
                 ))}
               </select>
             </div>

@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.index {
+  background-color: blue;
+  height: 100vh;
+}
+
+.cont {
+  height: 100vh;
+
+  margin: 0 auto;
+  display: block;
+  overflow: auto;
+}
+.cont::-webkit-scrollbar {
+  width: 8px; /* Tamaño del scroll en vertical */
+  height: 8px; /* Tamaño del scroll en horizontal */
+  /* Ocultar scroll */
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.cont::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.cont::-webkit-scrollbar-thumb:hover {
+  /* background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2); */
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.cont::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.cont::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+.cont::-webkit-scrollbar-track:hover,
+.cont::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}

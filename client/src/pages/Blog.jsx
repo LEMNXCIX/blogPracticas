@@ -23,7 +23,7 @@ export default function Blog() {
 
       <Container>
         <Posts posts={posts} />
-<Sidebar/>
+        <Sidebar />
       </Container>
     </>
   );

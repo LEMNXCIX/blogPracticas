@@ -5,11 +5,13 @@ import Write from "./pages/write/Write";
 import Settings from "./pages/settings/Settings";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";
 import Blog from "./pages/Blog";
 import { AboutUs } from "./pages/AboutUs";
+import { Galery } from "./pages/Galery";
+import "./App.css";
 
 function App() {
   const { user } = useContext(Context);
@@ -19,6 +21,9 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route exact path="/galeria">
+          <Galery />
         </Route>
         <Route exact path="/blog">
           <Blog />

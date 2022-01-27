@@ -12,11 +12,20 @@ router.post("/register", async (req, res) => {
       email: req.body.email,
       password: hashedPass,
     });
+  
 
     const user = await newUser.save();
-    res.status(200).json(user);
+    res.status(200).json({
+      user: user,
+      mensaje: "Todo ok",
+      type: "Succes",
+    });
   } catch (err) {
-    res.status(500).send("dasd");
+    res.status(500).json({
+      message: err.message,
+      mensaje: "No se ha podido completar el registro",
+      type: "Error del servidor",
+    });
   }
 });
 

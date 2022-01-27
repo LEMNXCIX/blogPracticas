@@ -31,6 +31,11 @@ export default function TopBar() {
             </Link>
           </li>
           <li className="topListItem">
+            <Link className="link" to="/galeria">
+              Galeria
+            </Link>
+          </li>
+          <li className="topListItem">
             <Link className="link" to="/acercade">
               Acerca de nosotros
             </Link>
