@@ -1,10 +1,8 @@
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
-import { useState } from "react/cjs/react.development";
+import React, { useState } from "react";
 import styled from "styled-components";
-import Data from "../Json/Informacion.json"
-
+import Data from "../Json/Informacion.json";
 
 export const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -30,7 +28,6 @@ export const Slider = () => {
             <InfoContainer>
               <Titlte>{item.title}</Titlte>
               <Desc>{item.desc}</Desc>
-              
             </InfoContainer>
           </Slide>
         ))}
@@ -85,10 +82,10 @@ const ImgContainer = styled.div`
   height: 100%;
 `;
 const Image = styled.img`
- width: 100%;
-height: 100%;
-object-fit: cover;
-border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
 `;
 const InfoContainer = styled.div`
   flex: 1;

@@ -50,7 +50,7 @@ export const Galery = () => {
       //"Actualiza la vista"
     } catch (err) {}
   };
-  const PF = "http://localhost:5000/galery/";
+  const PF = "https://uleamblog.herokuapp.com/galery/";
   const { user, dispatch } = useContext(Context);
   return (
     <Container>
