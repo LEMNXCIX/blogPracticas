@@ -1,32 +1,34 @@
 import { useEffect, useState } from "react";
+import Header from "../components/header/Header";
 import Posts from "../components/posts/Posts";
-import {Slider} from "../components/Slider"
-import {Footer} from "../components/Footer"
+import styled from "styled-components";
 import axios from "axios";
 import { useLocation } from "react-router";
+import Sidebar from "../components/sidebar/Sidebar";
+import { axiosInstance } from "../config";
 
-export default function Home() {
+export default function Blog() {
   const [posts, setPosts] = useState([]);
   const { search } = useLocation();
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get("/posts?new=true" + search);
+      const res = await axiosInstance.get("/posts" + search);
       setPosts(res.data);
     };
     fetchPosts();
   }, [search]);
   return (
     <>
-    <Slider/>
-    
-      
-        los ultimos posts
+      <Header />
+
+      <Container>
         <Posts posts={posts} />
-       
-     
-      <Footer/>
+        <Sidebar />
+      </Container>
     </>
   );
 }
-
+const Container = styled.div`
+  display: flex;
+`;

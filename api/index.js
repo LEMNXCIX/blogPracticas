@@ -72,12 +72,20 @@ app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
 app.use("/api/galery", galeryRoute);
 
+
+//middleware para express para usa este directorio como una carpeta estatica
+app.use(express.static(path.join(__dirname, "/client/build")));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/client/build', 'index.html'));
+});
+
 //Variable globlal
 app.use((req, res, next) => {
   res.locals.messege = req.flash("messege");
   next();
 });
 
-app.listen("5000", () => {
-  console.log("Backend is running.");
+app.listen(process.env.PORT || 5000, () => {
+  console.log("Backend esta funcionando.");
 });

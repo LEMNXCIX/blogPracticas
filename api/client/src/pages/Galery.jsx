@@ -3,6 +3,7 @@ import { useLocation } from "react-router";
 import styled from "styled-components";
 import { Context } from "../context/Context";
 import axios from "axios";
+import { axiosInstance } from "../config";
 // require Img from "../../../api/images/1640039615148Captura web_18-12-2021_182453_github.com.jpeg"
 
 export const Galery = () => {
@@ -11,7 +12,7 @@ export const Galery = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get("/galery" + search);
+      const res = await axiosInstance.get("/galery" + search);
       setGalery(res.data);
     };
     fetchPosts();
@@ -21,7 +22,7 @@ export const Galery = () => {
 
   useEffect(() => {
     const getGalery = async () => {
-      const res = await axios.get("/galery");
+      const res = await axiosInstance.get("/galery");
       setGalery(res.data);
     };
     getGalery();
@@ -39,11 +40,11 @@ export const Galery = () => {
       data.append("file", file);
       newGal.photo = filename;
       try {
-        await axios.post("/uploadGalery", data);
+        await axiosInstance.post("/uploadGalery", data);
       } catch (err) {}
     }
     try {
-      await axios.post("/galery", newGal);
+      await axiosInstance.post("/galery", newGal);
       //esto pasa la imagen a la api para subir la info a mongo
       window.location.replace("/galery/");
       //"Actualiza la vista"
