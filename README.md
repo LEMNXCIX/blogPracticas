@@ -4,14 +4,14 @@ El proyecto consta de una API REST que permite realizar un CRUD a los artículos
 
 ## Tecnologías usadas
 Programado con el stack MERN en el que se involucran tecnologías como: 
-1. MondoDB
+- MondoDB
   - MongoDB Atlas
-2. ExpressJS
-3. ReactJS
+- ExpressJS
+- ReactJS
   - Styled Components 
   - ReactRouterDom
   - Axios
-4. NodeJS
+- NodeJS
   - Multer
   - Bcrypt
   - Mongoose
